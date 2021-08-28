@@ -16,4 +16,4 @@ IMAGE_DEPENDS = "core-image-base"
 # images and files that will be included in the .swu image
 SWUPDATE_IMAGES = "core-image-base"
 
-SWUPDATE_IMAGES_FSTYPES[core-image-full-cmdline] = ".ext4.gz"
+SWUPDATE_IMAGES_FSTYPES[core-image-base] = ".ext4"

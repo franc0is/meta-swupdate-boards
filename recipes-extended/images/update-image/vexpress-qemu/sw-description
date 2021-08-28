@@ -7,10 +7,9 @@ software =
         stable : {
             copy1 : {
                 images: ({
-                        filename = "core-image-base-vexpress-qemu.ext4.gz";
+                        filename = "core-image-base-vexpress-qemu.ext4";
                         type = "raw";
-                        sha256 = "@core-image-base-vexpress-qemu.ext4.gz";
-                        compressed = "zlib";
+                        sha256 = "@core-image-base-vexpress-qemu.ext4";
                         device = "/dev/mmcblk0p2";
                 });
                 uboot: ({
@@ -20,10 +19,9 @@ software =
             };
             copy2 : {
                 images: ({
-                        filename = "core-image-base-vexpress-qemu.ext4.gz";
+                        filename = "core-image-base-vexpress-qemu.ext4";
                         type = "raw";
-                        sha256 = "@core-image-base-vexpress-qemu.ext4.gz";
-                        compressed = "zlib";
+                        sha256 = "@core-image-base-vexpress-qemu.ext4";
                         device = "/dev/mmcblk0p3";
                 });
                 uboot: ({
