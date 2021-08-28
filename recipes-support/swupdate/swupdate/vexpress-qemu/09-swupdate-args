@@ -13,10 +13,4 @@ else
 	SWUPDATE_SURICATTA_ARGS=" "
 fi
 
-if [ -e /media/etc/swupdate.cfg ];then
-	CFGFILE="/media/etc/swupdate.cfg"
-else
-	CFGFILE="/etc/swupdate.cfg"
-fi
-
-SWUPDATE_ARGS="-H raspberrypi3:1.0 ${selection} -f ${CFGFILE}"
+SWUPDATE_ARGS="-H vexpress-qemu:1.0.0 ${selection} -f /etc/swupdate.cfg"
